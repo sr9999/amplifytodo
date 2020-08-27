@@ -44,20 +44,20 @@ const App = () => {
 
   return (
     <div style={styles.container}>
-      <h2>Amplify Todos</h2>
+      <h2>Welcome to Freshlyy</h2>
       <input
         onChange={event => setInput('name', event.target.value)}
         style={styles.input}
         value={formState.name} 
-        placeholder="Name"
+        placeholder="Vegetable"
       />
       <input
         onChange={event => setInput('description', event.target.value)}
         style={styles.input}
         value={formState.description}
-        placeholder="Description"
+        placeholder="Quantity"
       />
-      <button style={styles.button} onClick={addTodo}>Create Todo</button>
+      <button style={styles.button} onClick={addTodo}>Order</button>
       {
         todos.map((todo, index) => (
           <div key={todo.id ? todo.id : index} style={styles.todo}>
